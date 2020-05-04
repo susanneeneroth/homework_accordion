@@ -1,0 +1,159 @@
+/* https://codepen.io/susa/pen/jObaGWX */
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f6704b;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.accordion {
+	width: 100%;
+	max-width: 250px;
+	height: 100%;
+	max-height: 400px;
+}
+
+.accordion .link {
+	cursor: pointer;
+	display: block;
+	padding: 15px 15px 15px 15px;
+	font-size: 14px;
+	color: #ffffff;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li:last-child .link {
+	border-bottom: 0;
+}
+
+.accordion li i {
+	position: absolute;
+	top: 16px;
+	left: 0;
+	font-size: 18px;
+	color: #ffffff;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li.open .link {
+	color: #f6704b;
+}
+
+.accordion li.open i {
+	color: #f6704b;
+}
+
+.link {
+	display: flex;
+	height: 60px;
+}
+
+.link-bkg-location {
+	background-color: #620808;
+	color: #f4ce74;
+}
+
+.link-text-yellow {
+	color: #f4ce74;
+}
+
+.link-bkg-music {
+	background-color: #a53f3f;
+	color: #f4ce74;
+}
+
+.link-bkg-notes {
+	background-color: #f4ce74;
+	color: #620808;
+}
+
+.link-text-dark {
+	color: #620808;
+}
+
+.link-bkg-books {
+	background-color: #ffe9c1;
+}
+
+.link-bkg-tend {
+	background-color: #d5441c;
+}
+
+.link-text-light {
+	color: #ffe9c1;
+}
+
+.link-flex1 {
+	flex: 1;
+}
+
+.link-flex2 {
+	flex: 1;
+	height: 50px;
+	padding-top: 5px;
+}
+
+.link-icon {
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+
+.link-text {
+	margin-top: 20px;
+}
+
+img.middle {
+	float: left;
+	vertical-align: middle;
+}
+
+/* Submenu */
+
+.submenu {
+	display: none;
+	background: #f4ce74;
+	font-size: 14px;
+	box-shadow: inset 1px 1px 5px rgba(85, 85, 85, 0.454);
+}
+
+p.submenu-text {
+	width: 225px;
+}
+
+.submenu a {
+	display: block;
+	text-decoration: none;
+	color: #620808;
+	padding: 10px 10px 15px 12px;
+	-webkit-transition: min-height 140px all 0.25s ease;
+	-o-transition: min-height 140px all 0.25s ease;
+	transition: min-height 140px all 0.25s ease;
+	cursor: default;
+}
+
+/* .submenu a:hover {
+	color: #ffffff;
+} */
